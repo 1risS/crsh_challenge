@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@600;700;800&display=swap');
+
+:root {
+  --copy-font: 'Space Grotesk', sans-serif;
+  --display-font: 'Sora', sans-serif;
+  color: #f4f7ff;
+  background: radial-gradient(
+      circle at 16% 8%,
+      rgba(181, 43, 255, 0.18),
+      transparent 26%
+    ),
+    radial-gradient(circle at 86% 20%, rgba(124, 18, 92, 0.16), transparent 24%),
+    linear-gradient(180deg, #0a0711 0%, #030306 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--copy-font);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+      circle at 16% 0%,
+      rgba(163, 29, 255, 0.12),
+      transparent 24%
+    ),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 18%);
+  pointer-events: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
